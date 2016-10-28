@@ -43,7 +43,7 @@ class CompanionObject(n: String) {
   }
 }
 
-object CompanionObject {
+object CompanionObject {  //单例对象不带参数
 
   private val dictionary = Map('a' -> "1", 'b' -> "2", 'c' -> "3")
 
