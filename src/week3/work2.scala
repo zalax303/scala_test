@@ -34,5 +34,5 @@ object work2 extends App {
   }
 
   println(Person.result)
-  println(Person.result_1)
+//  println(Person.result_1)
 }
