@@ -11,7 +11,6 @@ object Exercise  extends App{
   var left_bracket_num = 0
   var right_bracket_num = 0
 
-
   def contains(text: List[Char]): Boolean = {
 
 //    text match {
@@ -45,7 +44,5 @@ object Exercise  extends App{
   }
 
   println(pascal_num(6,1))
-
-
 
 }

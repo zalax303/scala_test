@@ -38,6 +38,7 @@ object Book extends App {
     Book("Programming in Scala", List("Odersky, Martin", "Spoon, Lex", "Venners, Bill"))
     )
 
+    println(books)
     println(find(books))
 
   }
