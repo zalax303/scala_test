@@ -23,4 +23,7 @@ object ListDemo extends App{
       println(t)
   }
 
+  println(b)
+  println(b.contains("d"))
+
 }

@@ -1,7 +1,5 @@
 package week3
 
-import java.lang.String
-
 /**
   * Created by dsfs on 2016/10/31.
   */
@@ -9,7 +7,9 @@ class Book(t: String, a: List[String]) {
   val title = t
   val authors = a
 
-  def ==(book: Book) = {
+  override def toString: String = t + ":" + a.toString()
+
+  def ==(book: Book) = { //自定义判断两个Book对象是否相等
     title == book.title && authors == book.authors
   }
 }

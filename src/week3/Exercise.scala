@@ -1,13 +1,8 @@
 package week3
-import java.util.regex.Pattern
 
 
-
-/**
-  * Created by dsfs on 2016/11/1.
-  */
 object Exercise extends App {
-  val statements = List("WATCH OUT!", "DO YOU HEAR ME?", "Do you speak English?", "What DID you do?","      ")
+  val statements = List("WATCH OUT!", "DO YOU HEAR ME?", "Do you speak English?", "What DID you do?", "      ")
 
   def result: String = ""
 
@@ -16,11 +11,10 @@ object Exercise extends App {
       statement <- statements
       result = if (statement == statement.map(_.toUpper) && statement.trim.length != 0) "\"Whoa, chill out!\""
       else if (statement != statement.map(_.toUpper) && statement.endsWith("?") && statement.trim.length != 0) "\"Sure\""
-      else if (statement.trim.length == 0)  "\"Fine. Be that way.\""
+      else if (statement.trim.length == 0) "\"Fine. Be that way.\""
     } yield result
   }
 
   println(answer(statements))
-//  println("    ".trim.length==0)
 }
 
