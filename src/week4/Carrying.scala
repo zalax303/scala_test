@@ -9,6 +9,7 @@ import java.io.{File, PrintWriter}
 object Carrying extends App{
   def withPrintWriter(file: File)(op: PrintWriter => Unit): Unit ={
     val writer: PrintWriter = new PrintWriter(file)
+//    writer.println("Hello World")
     try {
       op(writer)
     } finally
