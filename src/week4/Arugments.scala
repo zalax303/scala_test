@@ -9,7 +9,8 @@ object Arugments extends App {
   }
 
   def printPerson(name: String, age: Int = 10) = {
-    println("name is %s , age is %d", name, age)
+    printf("name is %s , age is %d\n", name, age)
+    //是printf不是println
     println(s"name is $name, age is $age")
   }
 
